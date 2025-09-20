@@ -1,8 +1,13 @@
 import os
+import sys
 import json
 import logging
 from datetime import datetime
 from flask import Flask, jsonify, request
+
+# Add the parent directory to sys.path to allow absolute imports
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from backend.parser import parse_resume, parse_job_description # Import both functions
 from backend.matcher import match_resume_to_jd # Import the matching function
 from backend.semantic_matcher import calculate_semantic_fit_score # Import the semantic matching function
