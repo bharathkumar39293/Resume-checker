@@ -1,0 +1,20 @@
+# Ignore Python compiled files
+__pycache__/
+*.pyc
+
+# Ignore database files
+*.sqlite3
+*.db
+
+# Ignore virtual environment directories
+virt/
+virtualenv/
+venc/
+venv/
+
+# Ignore uploaded files
+uploads/
+
+# Ignore specific database files if they are in the root or specific subdirectories
+chroma_db/
+sql_app.db
